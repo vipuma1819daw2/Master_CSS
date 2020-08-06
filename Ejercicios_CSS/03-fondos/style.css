@@ -1,0 +1,21 @@
+
+#caja{
+    border: 5px solid black;
+    padding: 10px;
+    background-color: rgb(105, 105, 41);
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    text-decoration: overline;
+}
+h2{
+    color:white;
+}
+p{
+    font-weight: bold;
+    word-spacing: 10px;
+    letter-spacing: 10px;
+    color:black;
+    font-family: serif;
+    text-align: justify;
+}
