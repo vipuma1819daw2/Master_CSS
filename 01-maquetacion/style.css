@@ -1,0 +1,116 @@
+@font-face {
+  font-family: molona;
+  src: url(/01-maquetacion/recursos/recursos-maquetacion-1-master-css-victor-robles/fonts/nevis.ttf);
+}
+body {
+  margin: 10px;
+  padding: 0px;
+}
+#container {
+  width: 100%;
+  margin: 0px auto;
+  background-image: url(/01-maquetacion/recursos/recursos-maquetacion-1-master-css-victor-robles/img/paven.png);
+}
+#logo {
+  margin: 0px auto;
+  text-align: center;
+}
+#logo img {
+  width: 10%;
+}
+#title {
+  margin-top: -35px;
+  font-size: 23px;
+  font-family: molona;
+  color: #71b053;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgb(77, 74, 74);
+  text-align: center;
+}
+
+#menu {
+  text-align: center;
+  background-color: rgb(71, 70, 70);
+  padding: 10px;
+}
+#menu ul {
+  margin: 0px auto;
+}
+#menu ul li {
+  text-align: center;
+  display: inline;
+  color: white;
+  padding: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-right: 1px solid white;
+}
+#main {
+  margin: 0px auto;
+  width: 70%;
+}
+#side-bar {
+  margin: 0px auto;
+  padding: 30px;
+  float: left;
+  width: 20%;
+}
+#content {
+  margin: 0px auto;
+  padding: 30px;
+  float: right;
+  width: 50%;
+}
+
+.bar {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid gray;
+  border-bottom: 1px dashed gray;
+  border-top: 1px dashed gray;
+
+  background-color: white;
+}
+.bar:first-child {
+  border-top: 1px solid gray;
+}
+.bar:nth-last-child(2) {
+  border-bottom: 1px solid gray;
+  text-align-last: left;
+}
+.bar:nth-last-child(2) ul li a {
+  padding: 5px;
+  font-size: 14px;
+  color: green;
+}
+.bar h3 {
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  background-color: rgb(216, 213, 213);
+}
+
+.bar p {
+  text-align-last: left;
+  color: green;
+}
+.bar input[type="submit"] {
+  width: 80px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  color: white;
+  background-color: green;
+  border: 1px solid rgb(3, 83, 3);
+}
+
+.blue h3 {
+  color: blue;
+}
+.red h3 {
+  color: red;
+}
+
+.clear-fix {
+  float: none;
+  clear: both;
+}
