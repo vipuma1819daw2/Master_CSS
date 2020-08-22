@@ -208,6 +208,7 @@ header {
   font-family: Trebuchet;
   margin-right: 50px;
   margin-top: 95px;
+  margin-right: 50px;
 }
 .box {
   width: 100%;
@@ -388,6 +389,7 @@ header {
   float: left;
   width: 65%;
   margin: 0px auto;
+  margin-left: 20px;
 }
 
 #articles h2 {
@@ -407,6 +409,7 @@ header {
 }
 
 article .data {
+  width: 100%;
   border: 1px solid black;
   margin-top: 50px;
   background-color: white;
@@ -447,6 +450,9 @@ article .data h4 a {
   color: #094c79;
   font-weight: 700;
 }
+article .data h4 a:hover {
+  text-decoration: underline;
+}
 
 article .data p {
   display: block;
@@ -465,4 +471,127 @@ article .data p span a {
 }
 article .data p span a:hover {
   color: #2b8ac9;
+}
+
+article:last-child .data a {
+  display: block;
+  font-family: Bebas;
+  font-size: 40px;
+  letter-spacing: 2px;
+  color: #00538c;
+  line-height: 110px;
+  text-decoration: none;
+  transition: all 300ms;
+}
+
+article:last-child .data {
+  margin-bottom: 100px;
+  height: 110px;
+  text-align: center;
+}
+
+article:last-child .data a:hover {
+  color: #37bcf9;
+}
+
+#blog {
+  display: bl0ock;
+  cursor: pointer;
+}
+
+/* ////////////FOOTER////////////*/
+
+footer {
+  background-color: black;
+  width: 100%;
+  height: 500px;
+  display: block;
+  margin: 0px auto;
+}
+footer .wrap #menu-footer,
+footer .wrap #location,
+footer .wrap #info {
+  display: block;
+  float: left;
+  width: 30%;
+  margin: 20px;
+  margin-top: 50px;
+}
+
+footer .wrap h5 {
+  width: 100%;
+  height: 50px;
+  line-height: 53px;
+  background: url(/02-maquetacion/img/pxgray.png), white;
+  color: black;
+  font-family: bebas;
+  letter-spacing: 2px;
+  font-size: 40px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+footer .wrap #location iframe {
+  width: 100%;
+  height: 330px;
+  border-radius: 10px;
+  margin-top: 20px;
+  border: 5px solid white;
+  box-shadow: 0px 0px 5px gray;
+}
+footer .wrap #info #browsers a {
+  display: block;
+  float: left;
+  margin: 0px auto;
+}
+
+footer .wrap #info #browsers a img {
+  width: 45px;
+  height: 45px;
+}
+footer .wrap #info {
+  color: white;
+}
+footer .wrap #info > p > img {
+  margin: 20px;
+}
+
+footer .wrap #info > p > a > img {
+  margin-right: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+footer .wrap #info > p > a:first-child > img {
+  margin-left: 25px;
+}
+footer .wrap #info p a {
+  text-decoration: none;
+}
+
+footer .wrap #menu-footer ul {
+  margin-left: 20px;
+}
+footer .wrap #menu-footer ul li {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: white;
+  border-bottom: 1px solid #ccc;
+}
+footer .wrap #menu-footer ul li a {
+  color: #37b7f1;
+  font-size: 30px;
+  font-family: Trebuchet;
+  text-decoration: none;
+  margin-left: 10px;
+  transition: all 300ms;
+}
+
+footer .wrap #menu-footer ul li a:hover {
+  color: white;
+}
+
+footer .wrap #info #autor {
+  margin-top: 20px;
+  margin-left: 20px;
+  font-family: Trebuchet;
 }
