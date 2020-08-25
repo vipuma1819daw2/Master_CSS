@@ -1,0 +1,405 @@
+@media (max-width: 1250px) {
+  .wrap {
+    width: 90%;
+    margin: 0px auto;
+  }
+  #banner h1 {
+    font-size: 35px;
+  }
+  .caja {
+    margin: 1.4%;
+    width: 17%;
+  }
+
+  .caja p {
+    display: block;
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 20px;
+    text-align: center;
+  }
+  #articles {
+    width: 60%;
+  }
+  #articles h2 {
+    width: 102%;
+  }
+  article .data {
+    height: 100%;
+    padding-bottom: 10px;
+    padding-right: 10px;
+  }
+  footer .wrap #menu-footer,
+  footer .wrap #location,
+  footer .wrap #info {
+    margin: 0px auto;
+    margin-top: 50px;
+    width: 25%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+  footer .wrap #menu-footer {
+    margin-left: 0px;
+  }
+  /* footer .wrap #info #browsers a {
+    width: 10%;
+    height: 10%;
+    margin-right: 10px !important ;
+  } */
+  
+  footer .wrap #info #browsers a img {
+    width: 100%;
+    height: 100%;
+  }
+
+  footer .wrap #info #browsers a:first-child img {
+
+    margin-top: 20px;
+    margin-right: 20px; 
+}
+  
+  footer .wrap #info p a {
+    width: 14%;
+
+  }
+
+  footer .wrap h5 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1040px){
+  .caja h2{
+    font-size:19px;
+  }
+  #cajas div:nth-child(2) h2 {
+    font-size: 19px;
+  }
+  .caja .text {
+    font-size: 14px;
+  }
+
+  #articles{
+    width: 58%;
+  }
+}
+@media (max-width: 979px) {
+  #articles{
+    width: 55%;
+  }
+
+  footer .wrap h5 {
+    font-size: 22px;
+}
+
+
+}
+
+@media (max-width: 914px){
+
+  #lateral{
+    width: 26%;
+}
+  #articles{
+    width: 62%;
+  }
+
+  #sponsors {
+    width: 70%;
+    margin-left: 8%;
+  }
+  #lateral input[type="text"]{
+    width: 70%;
+  }
+  #form {
+    width: 100%;
+    margin-left: 7%;
+  }
+  #lateral input[type="submit"], 
+  #lateral input[type="reset"] {
+    width: 45%;
+    margin-left: 25%;
+    
+  }
+  #lateral input[type="reset"]{
+    display: none;
+X  } 
+
+  #form input[type="email"], 
+  #form input[type="password"] {
+    width: 75%;
+            
+  }
+  #form #user, 
+  #form #password {
+    margin-left: 2%;
+  }
+  #signin{
+    
+    position: relative;
+    width: 91%;
+    height: 50px;
+    margin-left: 15px;
+    margin-right: 20px;
+   
+     
+  }
+
+  footer .wrap #menu-footer,
+  footer .wrap #location,
+  footer .wrap #info {
+    margin: 0px auto;
+    margin-top: 50px;
+    width: 30%;
+    margin-right: 2%;
+    margin-left: 2%;
+  }
+  footer .wrap #menu-footer {
+    margin-left: 0px;
+  }
+  footer .wrap #info > p > img{
+    width: 90%;
+  }
+  footer .wrap #info #browsers a{
+    margin-right: 0.5%;
+  }  
+}
+
+  @media (max-width: 840px){
+    .box h3{
+      font-size: 25px
+    }
+  }
+
+  @media (max-width: 824px){
+    #banner h1{
+      font-size: 27px;
+
+    }
+    .caja .text {
+      display:none;
+    }
+    .caja{
+      height: 170px;
+    }
+    .caja h2,
+    #cajas div:nth-child(2) h2{
+      font-size: 15px;
+    }
+}
+@media (max-width: 789px){
+
+  #search{
+    width: 80%;
+    margin-left: 30px;
+
+  }
+
+  
+  #lateral input[type="text"] {
+    width: 75%;
+  }
+  #lateral input[type="button"]{
+    width: 15%;
+    
+  }
+}
+
+
+
+@media (max-width: 702px){
+  header{
+    width: 100%;
+    height: 120px;
+    padding-top: 10px;
+  }
+
+  #menu{
+    clear: both;
+    float:none;
+    margin: 0px auto;
+    width: 445px;
+
+  }
+  #logo{
+    float: none;
+    margin: 0px auto;
+  }
+
+}
+
+@media (max-width: 670px){
+  #articles {
+    float: none;
+    width: 94%;
+    margin-left: 10px;
+  }
+  #articles h2 {
+    margin-top: 20px;
+  }
+
+
+  #lateral{
+    float:none;
+    width: 95%;
+    margin: 0px auto; 
+    margin-left: -17px;
+    margin-top: 40px;
+   }
+   #search{
+    width: 80%;
+    margin-left: 30px;
+
+  }
+
+  
+  #lateral input[type="text"] {
+    width: 80%;
+  }
+  #lateral input[type="button"]{
+    width: 17%;
+    
+  }
+  #search{
+    width: 70%;
+    margin-left: 80px;
+  }
+
+  .box #form{
+    width: 90%;
+
+  }
+  .box h3{
+    text-align: center;
+    font-size: 30px;
+  }
+  #signin {
+    width: 70%;
+    margin-left: 40px;
+}
+  #form #user, #form #password {
+    margin-left: 9%;
+  }
+
+  #sponsors {
+    width: 70%;
+    margin-left: 13%;
+  }
+  article .data .topright {    
+    margin-right: -10px;
+  }
+  footer {
+    width: 100%;
+    height: 1420px;
+  }
+  footer .wrap #menu-footer,
+  footer .wrap #location,
+  footer .wrap #info {
+    
+    width: 100%;
+    margin-left: -2px;
+   
+  }
+}
+
+@media (max-width: 546px){
+
+  #lateral input[type="button"]{
+    width: 16%;
+    
+  }
+  #search{
+    width: 65%;
+    margin-left: 80px;
+  }
+
+
+}
+
+@media (max-width: 475px){
+
+  #banner{
+    height: 85px;
+  }
+
+  #banner h1{
+    font-size: 18px;
+  }
+  
+rch{
+    width: 80%;
+    margin-left: 30px;
+
+  }
+
+  
+
+  #lateral input[type="button"]{
+    width: 14%;
+    
+  }
+  #search{
+    width: 62%;
+    margin-left: 80px;
+  }
+
+  .caja h2, 
+  #cajas div:nth-child(2) h2 {
+    font-size: 13px;
+  }
+  .caja .icon {
+    font-size: 35px;
+    margin-top: 30px;
+    transition: all 300ms;
+  }
+  .caja:hover .icon {
+    transform: scale(1.2, 1.2);
+  }
+  @keyframes showIcon {
+    from {
+      transform: translateY(-200%) scale(1, 1);
+    }
+    to {
+      transform: translateY(0%) scale(1.2, 1.2);
+    }
+  }
+
+  #menu{
+    clear: both;
+    float:none;
+    margin: 0px auto;
+    width: 100%;
+
+  }
+  #logo{
+    float:left;
+  }
+  header{
+    height: 275px;
+  }
+  #menu ul li{
+    width:100%;
+
+  }
+  #menu ul li a{
+    font-size: 20px;
+    margin: 0px;
+    height: 50px;
+    line-height: 50px;
+
+  }
+  #menu ul li a:hover {
+    color: #37bcf9;
+    transform: scale(1, 1);
+  }
+  article .data .topright {   
+    float:none; 
+    border-radius: 0px 0px 0px 0px;
+  }
+  footer {
+    width: 100%;
+    height: 1445px;
+  }
+ 
+}
+

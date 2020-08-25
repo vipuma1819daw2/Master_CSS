@@ -65,7 +65,7 @@ header {
   width: 150px;
   height: 30px;
   line-height: 35px;
-
+  color: white;
   margin-top: 10px;
   display: block;
   background-color: #37bcf9;
@@ -77,21 +77,67 @@ header {
   transition: all 300ms;
 }
 
+#logo:hover {
+  border-radius: 2px;
+  background-color: #ccc;
+  color: black;
+}
+
 #logo h3 {
   display: block;
-  color: white;
   font-family: Bebas;
   float: right;
   font-size: 40px;
   margin-right: 30px;
   transition: all 300ms;
 }
+
+#logo:hover h3 {
+  animation: fromRight 300ms linear;
+}
+
+@keyframes fromRight {
+  from {
+    transform: translateX(200%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
 #gear {
   display: block;
   float: left;
   font-size: 30px;
+  animation-name: rotate-gear;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
+@keyframes rotate-gear {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+#logo:hover #gear {
+  animation: fromBellow 300ms linear;
+}
+@keyframes fromBellow {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(200%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
 /* ////////////Estilos menu//////////// */
 #menu {
   display: block;
@@ -129,8 +175,18 @@ header {
   border: 10px solid rgb(255, 255, 255);
   box-shadow: 1px 1px 2px rgb(163, 161, 161);
   background: url("/02-maquetacion/img/bakbaner.png");
-  background-position: -333px -192px;
+  background-position: -200px -200px;
   margin: 20px auto;
+  animation: backBanner 10s linear;
+  overflow: hidden;
+}
+@keyframes backBanner {
+  from {
+    background-position: 0px 0px;
+  }
+  to {
+    background-position: 200px 200px;
+  }
 }
 
 #banner h1 {
@@ -144,6 +200,30 @@ header {
   word-spacing: 5px;
   text-shadow: 2px 2px 1px black;
   letter-spacing: 2px;
+  animation: showText 10s linear;
+}
+
+@keyframes showText {
+  0% {
+    transform: translateX(-600%) scale(5, 5);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(600%) scale(5, 5);
+    opacity: 1;
+  }
+  75% {
+    transform: translateX(-600%) scale(5, 5);
+    text-shadow: none;
+    color: transparent;
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%) scale(1, 1);
+    opacity: 1;
+    text-shadow: 2px 2px 1px black;
+    color: white;
+  }
 }
 
 /* ////////////CAJAS////////////*/
@@ -164,7 +244,13 @@ header {
   background-color: white;
   cursor: pointer;
   transition: all 300ms;
+  overflow: hidden;
 }
+
+.caja:hover {
+  background-color: black;
+}
+
 .caja:last-child {
   margin-right: 0px;
 }
@@ -175,22 +261,73 @@ header {
 .caja .icon {
   font-size: 50px;
   margin-top: 30px;
+  transition: all 300ms;
 }
-.caja h2 {
-  color: #00538c;
+
+.caja:hover .icon {
+  color: #37bcf9;
+  animation: showIcon 300ms linear;
 }
+
+@keyframes showIcon {
+  from {
+    transform: translateY(-200%) scale(1, 1);
+  }
+  to {
+    transform: translateY(0%) scale(1.5, 1.5);
+  }
+}
+.caja:hover .icon {
+  transform: scale(1.5, 1.5);
+}
+
 .caja h2 {
   margin-top: 30px;
   font-size: 23px;
   font-weight: bold;
   font-family: Trebuchet;
   font-weight: bold;
+  color: #00538c;
+  transition: all 300ms;
+}
+
+.caja:hover h2 {
+  color: white;
+  animation: showH2 200ms linear;
+}
+
+@keyframes showH2 {
+  from {
+    transform: translateY(-300%);
+    color: black;
+  }
+  to {
+    transform: translateY(0%);
+    color: white;
+  }
 }
 
 .text {
   margin-top: 39px;
   font-size: 15px;
   color: #0a65a1;
+  transition: all 300ms;
+}
+
+.caja:hover .text {
+  color: white;
+  animation: showDesc 200ms linear;
+}
+
+@keyframes showDesc {
+  from {
+    transform: translateX(-300%);
+    color: black;
+  }
+  to {
+    transform: translateX(0%);
+    color: whit;
+  }
 }
 
 #cajas div:nth-child(2) h2 {
@@ -355,7 +492,7 @@ header {
 
 #sociales {
   font-family: WebSymbolsRegular;
-  width: 160px;
+  width: 168px;
   height: 230px;
   display: block;
   margin: 0px auto;
@@ -370,6 +507,30 @@ header {
   text-decoration: none;
   margin: 15px;
   margin-left: 20px;
+}
+
+#sociales .overlay {
+  font-family: Trebuchet;
+  display: block;
+  height: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow: 0px 0px 1px #ccc;
+  border: 3px solid white;
+  box-shadow: 0px 0p 4px #ccc;
+  background-color: #f4f7fe;
+  position: absolute;
+  padding: 5px;
+  margin-left: 70px;
+  margin-top: -52px;
+  transform: translateX(-80%);
+  opacity: 0;
+  transition: all 300ms;
+}
+
+#sociales div:hover .overlay {
+  transform: translateX(0%);
+  opacity: 1;
 }
 
 #sponsors {
@@ -419,6 +580,7 @@ article .data {
   display: block;
   float: left;
   font-family: Trebuchet;
+  transition: all 1s;
 }
 
 article .data .topright {
@@ -490,13 +652,46 @@ article:last-child .data {
   text-align: center;
 }
 
-article:last-child .data a:hover {
-  color: #37bcf9;
-}
-
 #blog {
   display: bl0ock;
   cursor: pointer;
+  transition: all 1s;
+}
+
+#blog:hover .data {
+  border: 10px solid #37bcf9;
+  border-radius: 240px;
+  box-shadow: 0px 0px 10px gray;
+  background-color: #333;
+  animation: blink 10s infinite linear;
+}
+
+@keyframes blink {
+  0% {
+    border: 10px solid #37bcf9;
+  }
+  25% {
+    border: 10px solid rgb(92, 252, 92);
+  }
+  50% {
+    border: 10px solid rgb(255, 255, 61);
+  }
+  75% {
+    border: 10px solid rgb(255, 69, 255);
+  }
+  100% {
+    border: 10px solid #37bcf9;
+  }
+}
+
+#blog:hover .data h3 a {
+  text-shadow: 1px 1px 1px black, 1px 2px 1px black, 1px 3px 1px black,
+    1px 4px 1px black, 1px 5px 1px black, 1px 6px 1px black;
+  color: white;
+}
+
+#blog a {
+  transition: all 1s;
 }
 
 /* ////////////FOOTER////////////*/
@@ -561,8 +756,8 @@ footer .wrap #info > p > a > img {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-footer .wrap #info > p > a:first-child > img {
-  margin-left: 25px;
+footer .wrap #info #browsers a:first-child {
+  margin-left: 22px;
 }
 footer .wrap #info p a {
   text-decoration: none;
@@ -572,8 +767,8 @@ footer .wrap #menu-footer ul {
   margin-left: 20px;
 }
 footer .wrap #menu-footer ul li {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  height: 60px;
+  line-height: 60px;
   color: white;
   border-bottom: 1px solid #ccc;
 }
@@ -584,10 +779,13 @@ footer .wrap #menu-footer ul li a {
   text-decoration: none;
   margin-left: 10px;
   transition: all 300ms;
+  display: block;
+  transform: translateX(0%);
 }
 
-footer .wrap #menu-footer ul li a:hover {
+footer .wrap #menu-footer ul li:hover a {
   color: white;
+  transform: translateX(20%);
 }
 
 footer .wrap #info #autor {
