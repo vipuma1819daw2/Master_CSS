@@ -1,0 +1,82 @@
+body {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+/* Ejercicio */
+#website *{
+  padding: 0px;
+  margin: 0px;11
+
+}
+#website {
+  width: 75%;
+  height: 1000px;
+  margin: 0px auto;
+  border: 1px solid #ccc;
+
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 150px 70px 1fr 70px;
+  grid-template-areas: 
+    "cabecera cabecera cabecera cabecera cabecera "
+    " menu menu menu menu menu"
+    "barra contenido contenido contenido contenido"
+    "footer footer footer footer footer  ";
+
+}
+#cabecera {
+  grid-area: cabecera;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+  color: white;
+}
+
+
+#menu {
+  grid-area: menu;
+
+  background-color: lightblue;
+  line-height: 70px;
+}
+#menu ul {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+#menu ul li a {
+  color: black;
+}
+#contenido {
+  grid-area: contenido;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px;
+  padding: 20px;
+
+  background-color: #eee;
+}
+
+#contenido article {
+  background-color: #ccc;
+  border: 1px solid #555;
+}
+#lateral {
+  grid-area: barra;
+  
+
+  background-color: orange;
+  color: white;
+}
+#footeer {
+  grid-area: footer;
+
+  background-color: black;
+  color: white;
+}

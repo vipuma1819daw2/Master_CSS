@@ -1,0 +1,125 @@
+body {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+/* Ejercicio */
+#website *{
+  padding: 0px;
+  margin: 0px;11
+
+}
+#website {
+  width: 75%;
+  height: 1000px;
+  margin: 0px auto;
+  border: 1px solid #ccc;
+
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 150px 70px 1fr 70px;
+}
+#cabecera {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1/6;
+  background-color: blue;
+  color: white;
+}
+
+
+#menu {
+  background-color: lightblue;
+  grid-column: 1/6;
+  line-height: 70px;
+}
+#menu ul {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  list-style: none;
+  margin: 0px;
+  padding: 0px;º
+}
+#menu ul li a {
+  color: black;
+}
+#contenido {
+  grid-column: 1/5;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px;
+  padding: 20px;
+
+  background-color: #eee;
+}
+
+#contenido article {
+  background-color: #ccc;
+  border: 1px solid #555;
+}
+#lateral {
+  grid-column: 5/5;
+
+  background-color: orange;
+  color: white;
+}
+#footeer {
+  background-color: black;
+  color: white;
+  grid-column: 1/6;
+}
+/* 
+
+EJemplos
+.layout {
+  
+  display: grid;
+  width: 80%;
+  height: 600px;
+  margin: 0px auto;
+
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr 2fr 1fr 1fr;
+  border: 3px solid orangered;
+}
+
+.layout .caja {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  padding: 20px;
+  border: 4px solid black;
+  background-color: gray;
+  margin: 10px;
+}
+
+.layout .red {
+  background-color: red;
+  grid-column: 1/4;
+}
+
+.layout .blue {
+  background-color: blue;
+  grid-column: 2/4;
+}
+.layout .green {
+  background-color: green;
+  grid-row: 2/6;
+}
+.layout .pink {
+  background-color: rgb(231, 116, 135);
+  grid-column: 2/3;
+  grid-row: 3/5;
+}
+.layout .orange {
+  background-color: orange;
+  grid-column: 3/4;
+  grid-row: 3/5;
+}
+.layout .lightblue {
+  background-color: lightblue;
+  grid-column: 2/4;
+  grid-row: 5/6;
+} */

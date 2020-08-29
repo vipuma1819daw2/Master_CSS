@@ -1,0 +1,35 @@
+* {
+  font-family: arial;
+}
+ul li {
+  font-size: 20px;
+}
+ul li:first-child {
+  font-size: 30px;
+  color: red;
+}
+
+ul li:nth-child(2) {
+  color: green;
+}
+
+#mi-enlace:visited {
+  color: red;
+}
+
+#mi-enlace:hover {
+  color: yellow;
+  font-weight: bold;
+}
+
+#mi-enlace:active {
+  color: purple;
+}
+
+input[type="text"] {
+  margin-top: 20px;
+  padding: 10px;
+}
+input[type="text"]:focus {
+  border: 4px dashed red;
+}
